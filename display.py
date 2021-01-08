@@ -9,7 +9,7 @@ display_width=25
 display_height=25
 scale=30
 
-iterations = 1000
+iterations = 60000
 x_train = []
 pct = 0
 for i in range(0,iterations):
