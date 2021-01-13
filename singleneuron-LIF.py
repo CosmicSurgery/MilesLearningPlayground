@@ -32,7 +32,7 @@ for i, t in enumerate(time):
             Vm[i] += V_spike
             t_rest = t + tau_ref
 
-
+print('debug')
 sns.set_style('dark')
 plt.figure(figsize=(15,7))
 plt.plot(time, Vm, color = u'#FFBB6C', label='Voltage')
@@ -45,4 +45,4 @@ plt.ylabel('Membrane Potential (V)')
 plt.xlabel('Time (msec)')
 plt.xlim(0,50)
 plt.ylim(-2,12)
-plt.savefig('LIF.png', dpi=300)
+plt.show()
