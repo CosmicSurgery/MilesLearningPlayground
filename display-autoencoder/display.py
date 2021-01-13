@@ -37,15 +37,11 @@ for i in range(0,iterations):
     if i % int(iterations/100) == 0:
         pct +=1
         print(f' ~~~~ {pct}% completed ~~~~ ', end="\r")
-        
 
-
-np.save('train.npy', x_train)
-
-test = np.load('train.npy')
+#
+#
+# np.save('train.npy', x_train)
+#
+# test = np.load('train.npy')
 
 print()
-
-
-
-
