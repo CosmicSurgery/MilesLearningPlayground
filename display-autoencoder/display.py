@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 target_size=7
 cursor_size=3
-display_width=25
-display_height=25
+display_width=50
+display_height=50
 scale=30
 
 iterations = 60000
@@ -32,16 +32,20 @@ for i in range(0,iterations):
 
     img = img.convert('1')
     img = (np.asarray(img).flatten())
-    img = np.array([int(k) for k in img]).reshape(25,25)
+    img = np.array([int(k) for k in img]).reshape(display_width,display_height)
     x_train.append(img)
     if i % int(iterations/100) == 0:
         pct +=1
         print(f' ~~~~ {pct}% completed ~~~~ ', end="\r")
 
-#
-#
-# np.save('train.npy', x_train)
-#
-# test = np.load('train.npy')
+
+
+np.save('train({display_width},{display_height}).npy', x_train)
+
+test = np.load('train.npy')
+
+plt.figure()
+plt.imshow(img)
+plt.show()
 
 print()

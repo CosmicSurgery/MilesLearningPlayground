@@ -19,7 +19,7 @@ tau_ref = 4                     # refractory period (msec)
 Vth = 1                         # spike threshold (V)
 V_spike = 10.0                  # spike delta (V)
 
-I = 2.0 * np.ones(len(time))    #inpurt current (A)
+I = 2.0 * np.ones(len(time))    #input current (A)
 noise = []                      # noise term
 
 # iterate over each time step
