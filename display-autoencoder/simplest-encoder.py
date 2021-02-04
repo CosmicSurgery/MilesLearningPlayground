@@ -75,10 +75,11 @@ val_loss_history = np.array(val_loss_history)
 # np.save('val_loss_history.npy', val_loss_history)
 
 
-encoded_imgs = encoder.predict(x_test)
+encoded_imgs = encoder.predict(x_train)
 decoded_imgs = decoder.predict(encoded_imgs)
 
-np.save('decoded_imgs.npy',decoded_imgs)
+# np.save('encoded_imgs.npy',encoded_imgs)
+# np.save('decoded_imgs.npy',decoded_imgs)
 
 
 
