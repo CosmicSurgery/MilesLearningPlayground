@@ -1,0 +1,23 @@
+Thank you!
+
+A little background on the project I am working on, I am trying to train two networks of spiking neurons to perform a center-out task to model the sensorimotor cortices.
+
+Additionally, I am compiling the code from scratch to put together this model and therefore will make several deviations from the model you described in your paper.
+
+Regarding the neuron model:
+    -How important is the choice of neuron model on memory trace learning?
+    -Just about equation (6), you estimate a membrane potential at rest to be -905.90. Thinking through equation (3) I arrive at a number closer to -300 assuming the majority of the membrane potential comes from the excitability terms.
+    
+Regarding plasticity algorthims:
+    -In equation 10, does A refer to the initial weight drawn from Table 1, or from the steady state equations 15-17?
+    -Is PSPn, a scalar for equation (1)?X
+    -In equation 18, is w init prime the initialized weights for dynamic synapses?
+    -Does equation 19 modify the instantaneous absolute synaptic efficacy, in the same way that STP does in equations (12) and (14)?
+    -Would it be necessary to initialize the weights with equations 15-18 if there were no initialization phase?
+
+    -What is the stochastic firing criterion
+    -Did he allow for autaptic connections
+
+Thank you very much,
+Miles Keating
+    
